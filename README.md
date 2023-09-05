@@ -1,0 +1,2 @@
+Aplikasi ini adalah program yang dibuat oleh Sindhu, Christian, dan Husain (SCH). Dengan mengutamakan konsep minimalis, kami telah membuat laman login dan sign up untuk program ini. (5 September 2023)
+Aplikasi ini diharapkan dapat menjadi aplikasi yang membantu penggunanya dalam mengatur jadwal, jumlah repetisi, lama istirahat, serta pola gerakan yang tepat untuk melakukan workout di rumah, tergantung bagian otot mana yang ingin dilatih.
