@@ -3,6 +3,8 @@ package com.cstian23.loginsignin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import com.cstian23.loginsignin.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -14,8 +16,16 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+            val data = binding.entName.text.toString()
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("name", data)
+            startActivity(intent)
         }
+
+//        Handler(Looper.getMainLooper()).postDelayed({
+//            startActivity(Intent(this, MainActivity::class.java))
+//            finish()
+//        }, 3000)
+
     }
 }

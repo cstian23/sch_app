@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.cstian23.loginsignin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.cstian23.loginsignin"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
