@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    tools:context=".register">
+    tools:context=".ui.register">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,12 +53,11 @@
             android:textStyle="bold"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="  enter your email"
-            android:fontFamily="@font/poppins"
-            android:background="@drawable/kotakan"
-            />
+            android:hint="enter your email"
+            android:drawableStart="@drawable/ic_email"
+            style="@style/edit_text_style"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,11 +69,12 @@
             android:textStyle="bold"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="  enter your password"
-            android:fontFamily="@font/poppins"
-            android:background="@drawable/kotakan"/>
+            android:hint="enter your password"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_visibility"
+            style="@style/edit_text_style"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,10 +85,12 @@
             android:textStyle="bold"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="  verify your password"
-            android:background="@drawable/kotakan"/>
+            android:hint="verify your password"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_visibility"
+            style="@style/edit_text_style"/>
 
 
     </LinearLayout>
@@ -104,13 +106,13 @@
             >
 
 
-
             <Button
+                android:id="@+id/btn_sign_up_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
                 android:layout_weight="1"
-                android:text="Login"
-                android:layout_marginTop="40dp"/>
+                android:text="Sign Up" />
 
 
         </LinearLayout>

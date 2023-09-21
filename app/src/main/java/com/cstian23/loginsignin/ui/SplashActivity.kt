@@ -1,4 +1,4 @@
-package com.cstian23.loginsignin
+package com.cstian23.loginsignin.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,17 +15,10 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener {
-            val data = binding.entName.text.toString()
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("name", data)
-            startActivity(intent)
-        }
-
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }, 3000)
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, login::class.java))
+            finish()
+        }, 3000)
 
     }
 }

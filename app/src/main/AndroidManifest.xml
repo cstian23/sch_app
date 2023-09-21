@@ -16,13 +16,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".register"
+            android:name=".ui.register"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".ui.login"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
