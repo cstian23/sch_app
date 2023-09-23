@@ -8,22 +8,24 @@ import com.cstian23.loginsignin.ui.Home
 import com.cstian23.loginsignin.ui.register
 import com.cstian23.loginsignin.databinding.ActivitySplashBinding
 import com.cstian23.loginsignin.MainActivity
+import com.cstian23.loginsignin.databinding.ActivityLoginBinding
+import com.cstian23.loginsignin.databinding.ActivityMainBinding
 
 class login : AppCompatActivity() {
 
-    private lateinit var binding: ActivitySplashBinding
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySplashBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btn_login_1.setOnClickListener {
+        binding.btnLogin1.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 
-        binding.btn_login_2.setOnClickListener {
+        binding.btnLogin2.setOnClickListener {
             val intent = Intent(this, register::class.java)
             startActivity(intent)
         }
