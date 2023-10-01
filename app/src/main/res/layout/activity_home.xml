@@ -76,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/rectangle_upper_body"
-                    style="@style/home_background_color"/>
+                    style="@style/rectangle_background_color"/>
 
                 <TextView
                     android:layout_width="188dp"
@@ -141,7 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_lose_fat"
-                        style="@style/home_background_color"/>
+                        style="@style/rectangle_background_color"/>
 
                     <TextView
                         android:layout_width="150dp"
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/rectangle_lower_body"
-                    style="@style/home_background_color"/>
+                    style="@style/rectangle_background_color"/>
 
                 <TextView
                     android:layout_width="238dp"

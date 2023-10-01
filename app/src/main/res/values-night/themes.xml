@@ -11,24 +11,10 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="edit_text_style">
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">#C5C5D1</item>
-        <item name="android:drawablePadding">16dp</item>
-    </style>
-
     <style name="title_field">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/poppins</item>
-    </style>
-
-    <style name="btn_primary">
-        <item name="android:backgroundTint">@color/blue</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/poppins_bold</item>
-        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="text_color">
@@ -39,7 +25,7 @@
         <item name="android:background">@color/white</item>
     </style>
 
-    <style name="home_background_color">
+    <style name="rectangle_background_color">
         <item name="android:background">#2AFFFFFF</item>
     </style>
 </resources>
