@@ -27,7 +27,7 @@
         <View
             android:layout_width="191dp"
             android:layout_height="2dp"
-            android:background="@color/black"/>
+            style="@style/background_color"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -69,9 +69,9 @@
             android:text="Doesn't have an account?"
             android:fontFamily="@font/poppins"
             android:textSize="14sp"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            style="@style/text_color"/>
 
         <TextView
             android:id="@+id/btn_signup"

@@ -32,7 +32,7 @@
                     android:text="Hey,"
                     android:textSize="32sp"
                     android:fontFamily="@font/poppins_bold"
-                    android:textColor="@color/black"/>
+                    style="@style/text_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
                     android:text="User!"
                     android:textSize="32sp"
                     android:fontFamily="@font/poppins_bold"
-                    android:textColor="@color/black"/>
+                    style="@style/text_color"/>
             </LinearLayout>
 
             <ImageView
@@ -54,7 +54,7 @@
         <View
             android:layout_width="348dp"
             android:layout_height="2dp"
-            android:background="@color/black"/>
+            style="@style/background_color"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,7 +75,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rectangle_upper_body"/>
+                    android:src="@drawable/rectangle_upper_body"
+                    style="@style/home_background_color"/>
 
                 <TextView
                     android:layout_width="188dp"
@@ -139,7 +140,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_lose_fat"/>
+                        android:src="@drawable/rectangle_lose_fat"
+                        style="@style/home_background_color"/>
 
                     <TextView
                         android:layout_width="150dp"
@@ -169,7 +171,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rectangle_lower_body"/>
+                    android:src="@drawable/rectangle_lower_body"
+                    style="@style/home_background_color"/>
 
                 <TextView
                     android:layout_width="238dp"
