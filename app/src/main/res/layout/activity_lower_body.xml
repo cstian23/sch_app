@@ -14,8 +14,8 @@
         android:text="Lower body"
         android:textSize="40dp"
         android:fontFamily="@font/poppins_bold"
-        android:textColor="@color/black"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        style="@style/text_color"/>
 
     <ProgressBar
         android:layout_width="wrap_content"
