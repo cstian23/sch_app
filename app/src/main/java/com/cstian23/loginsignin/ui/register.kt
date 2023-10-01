@@ -16,7 +16,12 @@ class register : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnSignUp1.setOnClickListener {
+        binding.btnSignup.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnLogin.setOnClickListener {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
         }

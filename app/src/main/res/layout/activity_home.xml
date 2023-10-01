@@ -1,242 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="50dp"
-    android:paddingLeft="11dp"
-    android:paddingRight="12dp"
     android:orientation="vertical"
     tools:context=".ui.Home">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hey,"
-                android:textSize="32sp"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="User!"
-                android:textSize="32sp"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="82dp"
-            android:src="@drawable/default_pfp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="266dp"/>
-    </RelativeLayout>
-
-    <View
-        android:layout_width="348dp"
-        android:layout_height="2dp"
-        android:background="@color/black"/>
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:orientation="horizontal">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            
-            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/upper_body"/>
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hey,"
+                    android:textSize="32sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User!"
+                    android:textSize="32sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/rectangle_upper_body"/>
-            
-            <TextView
-                android:layout_width="188dp"
-                android:layout_height="279dp"
-                android:text="UPPER BODY"
-                style="@style/home_font" />
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:src="@drawable/default_pfp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="266dp"/>
         </RelativeLayout>
 
+        <View
+            android:layout_width="348dp"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp"
-            android:orientation="vertical">
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/upper_body"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rectangle_home_top"/>
+                    android:src="@drawable/upper_body"/>
 
-                <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="49dp"
-                    android:paddingTop="9dp"
-                    android:paddingLeft="14dp"
-                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_upper_body"/>
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="279dp"
+                    android:text="UPPER BODY"
+                    style="@style/home_font" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/spotify"/>
+                        android:src="@drawable/rectangle_home_top"/>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="49dp"
+                        android:paddingTop="9dp"
+                        android:paddingLeft="14dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/spotify"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:src="@drawable/notification"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:src="@drawable/settings"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/lose_fat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lose_fat"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:src="@drawable/notification"/>
+                        android:src="@drawable/rectangle_lose_fat"/>
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:src="@drawable/settings"/>
-                </LinearLayout>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:text="LOSE FAT"
+                        style="@style/home_font"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/lower_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lower_body"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_lower_body"/>
+
+                <TextView
+                    android:layout_width="238dp"
+                    android:layout_height="196dp"
+                    android:text="LOWER BODY"
+                    style="@style/home_font"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-                
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/lose_fat"/>
+                android:layout_marginLeft="14dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/rectangle_lose_fat"/>
-                
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="220dp"
-                    android:text="LOSE FAT"
-                    style="@style/home_font"/>
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/lower_body"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/rectangle_lower_body"/>
-            
-            <TextView
-                android:layout_width="238dp"
-                android:layout_height="196dp"
-                android:text="LOWER BODY"
-                style="@style/home_font"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/rectangle_home_bottom"/>
-            
-            <LinearLayout
-                android:layout_width="105dp"
-                android:layout_height="196dp"
-                android:orientation="vertical">
-                
-                <TextView
-                    android:layout_width="97dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginLeft="15dp"
-                    android:text="FOLLOW US"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textColor="@color/black"/>
+                    android:src="@drawable/rectangle_home_bottom"/>
 
                 <LinearLayout
                     android:layout_width="105dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:paddingLeft="19dp"
+                    android:layout_height="196dp"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="105dp"
+                    <TextView
+                        android:layout_width="97dp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/instagram"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="16dp"
-                            android:src="@drawable/twitter"/>
-                    </LinearLayout>
+                        android:layout_marginTop="28dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="FOLLOW US"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="105dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="22dp"
-                        android:orientation="horizontal">
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="19dp"
+                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="105dp"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/tiktok"/>
+                            android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/instagram"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:src="@drawable/twitter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="105dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="16dp"
-                            android:src="@drawable/youtube"/>
+                            android:layout_marginTop="22dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/tiktok"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:src="@drawable/youtube"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
