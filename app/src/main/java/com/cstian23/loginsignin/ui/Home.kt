@@ -1,6 +1,7 @@
 package com.cstian23.loginsignin.ui
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -37,12 +38,42 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, LowerBodyActivity::class.java)
             startActivity(intent)
         }
+
+        binding.spotify.setOnClickListener {
+            val link = "https://spotify.com/"
+            openSocialMedia(link)
+        }
+
+        binding.ig.setOnClickListener {
+            val link = "https://instagram.com/"
+            openSocialMedia(link)
+        }
+
+        binding.twitter.setOnClickListener {
+            val link = "https://twitter.com/"
+            openSocialMedia(link)
+        }
+
+        binding.tt.setOnClickListener {
+            val link = "https://tiktok.com/"
+            openSocialMedia(link)
+        }
+
+        binding.yt.setOnClickListener {
+            val link = "https://youtube.com/"
+            openSocialMedia(link)
+        }
     }
 
     private fun pickImageGalery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, IMAGE_REQUEST_CODE)
+    }
+
+    private fun openSocialMedia(link: String) {
+        val uri = Uri.parse(link)
+        startActivity(Intent(Intent.ACTION_VIEW, uri))
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
