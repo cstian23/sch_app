@@ -44,6 +44,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/pfp"
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:src="@drawable/default_pfp"
@@ -195,21 +196,22 @@
                     android:layout_width="105dp"
                     android:layout_height="196dp"
                     android:paddingVertical="28dp"
-                    android:paddingHorizontal="10dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="97dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="FOLLOW US"
                         android:textSize="18sp"
+                        android:paddingHorizontal="10dp"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/black"/>
 
                     <LinearLayout
-                        android:layout_width="105dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="11dp"
+                        android:paddingHorizontal="12dp"
                         android:orientation="vertical">
 
                         <LinearLayout
