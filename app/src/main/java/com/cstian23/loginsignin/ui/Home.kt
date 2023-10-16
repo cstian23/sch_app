@@ -20,6 +20,12 @@ class Home : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("username")
+
+        if (username != null) {
+            binding.username.text = "$username!"
+        }
+
         binding.pfp.setOnClickListener {
             pickImageGalery()
         }
