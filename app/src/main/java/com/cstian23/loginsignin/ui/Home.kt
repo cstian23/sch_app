@@ -90,7 +90,6 @@ class Home : AppCompatActivity() {
             Glide.with(this)
                 .load(url)
                 .fitCenter()
-                .circleCrop()
                 .skipMemoryCache(true)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .placeholder(R.drawable.default_pfp)

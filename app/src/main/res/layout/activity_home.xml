@@ -44,7 +44,7 @@
                     style="@style/text_color"/>
             </LinearLayout>
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/pfp"
                 android:layout_width="82dp"
                 android:layout_height="82dp"
