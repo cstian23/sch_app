@@ -8,20 +8,20 @@ import com.cstian23.loginsignin.R
 import com.cstian23.loginsignin.data.MainAdapter
 import com.cstian23.loginsignin.data.remote.ApiService
 import com.cstian23.loginsignin.data.remote.ExercisesItem
-import com.cstian23.loginsignin.databinding.ActivityLoseFatBinding
+import com.cstian23.loginsignin.databinding.ActivityLowerBodyBinding
 import com.cstian23.loginsignin.util.constant
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class LowerBodyActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoseFatBinding
+    private lateinit var binding: ActivityLowerBodyBinding
     private lateinit var viewAdapter: MainAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoseFatBinding.inflate(layoutInflater)
+        binding = ActivityLowerBodyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         viewManager = LinearLayoutManager(this)
